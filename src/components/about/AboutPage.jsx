@@ -1,4 +1,4 @@
-const AboutPage = props => (
+const AboutPage = (props) => (
   <div className="container">
     <h1>About page</h1>
     <p>
@@ -6,6 +6,7 @@ const AboutPage = props => (
       teachers who are active in the industry, resulting in real, applicable
       knowledge.
     </p>
-</div>
+  </div>
+);
 
-export default AboutPage
+export default AboutPage;
