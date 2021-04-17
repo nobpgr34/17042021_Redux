@@ -67,8 +67,14 @@ state = {
 
 ==============📣 4. Redux middleware
 
+
+
+
 4.1 Пишем свой middleware  log и подключаем его классическим способом
 c помощью compose 
+
+
+
 
 https://github.com/zalmoxisus/redux-devtools-extension
 
