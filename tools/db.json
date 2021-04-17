@@ -1,20 +1,6 @@
 {
   "courses": [
     {
-      "id": 1,
-      "title": "Front end",
-      "slug": "front-end",
-      "authorId": 1,
-      "category": "frontend"
-    },
-    {
-      "id": 2,
-      "title": "JavaScript Advanced React",
-      "slug": "javascript-advanced",
-      "authorId": 1,
-      "category": "frontend"
-    },
-    {
       "id": 3,
       "title": "Backend PHP",
       "slug": "backend-php",
@@ -69,11 +55,28 @@
       "slug": "framework-symphony",
       "authorId": 2,
       "category": "backend"
+    },
+    {
+      "title": "Glass",
+      "authorId": 2,
+      "category": "backend",
+      "createdAt": 1618651181317,
+      "slug": "glass",
+      "id": 12
     }
   ],
   "authors": [
-    { "id": 1, "name": "Scott Alen" },
-    { "id": 2, "name": "Robert Williams" },
-    { "id": 3, "name": "Adam Clark" }
+    {
+      "id": 1,
+      "name": "Scott Alen"
+    },
+    {
+      "id": 2,
+      "name": "Robert Williams"
+    },
+    {
+      "id": 3,
+      "name": "Adam Clark"
+    }
   ]
 }

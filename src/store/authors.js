@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import * as authorApi from "../api/authorApi";
+import { beginApiCall, apiCallSuccess } from "./apiStatus";
 
 const slice = createSlice({
   name: "authors",
@@ -21,11 +22,14 @@ export default slice.reducer;
 export const { authorsReceived, onError } = slice.actions;
 
 export const getAuthors = () => async (dispatch) => {
+  dispatch(beginApiCall());
   try {
     const authors = await authorApi.getAuthors();
     dispatch(authorsReceived(authors));
   } catch (err) {
     dispatch(onError(err));
     throw err;
+  } finally {
+    dispatch(apiCallSuccess());
   }
 };

@@ -1,7 +1,7 @@
 import { Link } from "@reach/router";
 import { memo } from "react";
 
-const CoursesList = ({ courses }) => {
+const CoursesList = ({ courses, handleDelete }) => {
   if (!courses.length) {
     return null;
   }
@@ -27,7 +27,12 @@ const CoursesList = ({ courses }) => {
             <td>{course.authorName}</td>
             <td>{course.category}</td>
             <td>
-              <button className="btn btn-outline-danger">Delete course</button>
+              <button
+                onClick={() => handleDelete(course)}
+                className="btn btn-outline-danger"
+              >
+                Delete course
+              </button>
             </td>
           </tr>
         ))}
